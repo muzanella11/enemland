@@ -1,0 +1,192 @@
+/************* Enem Project Name **************/
+$enem_project_name:             ahu !default;
+/**********************************************/
+
+/********* Foundation last style path *********/
+$enem_link_last_style:  '../../last_style/' !default;
+/**********************************************/
+
+/********* Fancybox Path Image Support ***********/
+$enem_fancybox_path_image:      '../bower_components/fancybox/source' !default;
+/**************************************************/
+
+/*************** Enem Flex Box ****************/
+$enem_flex_ul: false !default;
+$enem_flex_center: false !default;
+/*************************************************/
+
+/************** Enem Ahu Prefix **************/
+$enem_prefix:                   enem_#{$enem_project_name}_ !default;
+
+/** For new enem_apps **/
+/** 
+ * This variable prefix use for new enem_apps
+ **/
+$enem_prefix_el:                enem-#{$enem_project_name}- !default;
+/****************************/
+
+/*********************************************/
+
+/** Ahu Font Setting And Gap Global **/
+$enem_path_font:            '../fonts/' !default; // Get Path Font
+$enem_font_family_default: "Segoe UI","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif !default;
+/*************************************/
+
+/********** Enem Ahu Icon Path **********/
+$enem_path_icon: $enem_path_font;
+
+$enem_iconahu_name:         ahuicon !default;
+$enem_path_icon_name:       #{$enem_path_icon}#{$enem_iconahu_name} !default;
+
+$enem_iconahu2_name:        ahuicon2 !default;
+$enem_path_icon_name2:      #{$enem_path_icon}#{$enem_iconahu2_name} !default;
+
+$enem_iconahu3_name:        faqicon !default;
+$enem_path_icon_name3:      #{$enem_path_icon}#{$enem_iconahu3_name} !default;
+
+$enem_iconahu4_name:        ahuicon4 !default;
+$enem_path_icon_name4:      #{$enem_path_icon}#{$enem_iconahu4_name} !default;
+
+$enem_iconahu5_name:        ahuicon5 !default;
+$enem_path_icon_name5:      #{$enem_path_icon}#{$enem_iconahu5_name} !default;
+
+$enem_iconahu6_name:        ahuicon6 !default;
+$enem_path_icon_name6:      #{$enem_path_icon}#{$enem_iconahu6_name} !default;
+
+/**************************************/
+
+/********** For Media Queries *********/
+/** For Extra Small Screen / Phone **/
+$enem_screen_xs:            480px !default;
+$enem_screen_xs_min:        $enem_screen_xs !default;
+$enem_screen_phone:         $enem_screen_xs_min !default;
+
+/** For Small Screen / Tablet **/
+$enem_screen_sm:            768px !default;
+$enem_screen_sm_min:        $enem_screen_sm !default;
+$enem_screen_tablet:        $enem_screen_sm_min !default;
+
+/** For Medium Screen / Desktop **/
+$enem_screen_md:            992px !default;
+$enem_screen_md_min:        $enem_screen_md !default;
+$enem_screen_medium:        $enem_screen_md_min !default;
+
+/** For Large Screen / Wide Desktop **/
+$enem_screen_lg:            1200px !default;
+$enem_screen_lg_min:        $enem_screen_lg !default;
+$enem_screen_large:         $enem_screen_lg_min !default;
+
+/** For Screen Max **/
+$enem_screen_xs_max:              ($enem_screen_sm_min - 1) !default;
+$enem_screen_sm_max:              ($enem_screen_md_min - 1) !default;
+$enem_screen_md_max:              ($enem_screen_lg_min - 1) !default;
+/**************************************/
+
+/************** Ahu Theme Color **************/
+$enem_ahu_dark_blue:            #043C5F !default;
+$enem_ahu_dark2_blue:           #3F8FB0 !default;
+$enem_ahu_light_blue:           #006AAE !default;
+$enem_ahu_white:                white !default;
+$enem_ahu_grey:                 #DEDEDE !default;
+$enem_ahu_black:                #1A1A1A !default;
+$enem_ahu_red:                  #E1313F !default;
+$enem_ahu_dark_grey:            #B2B2B2 !default;
+$enem_ahu_text_color:           #6C6C6C !default;
+
+$enem_ahu_body_bg:              $enem_ahu_grey;
+$enem_ahu_navbar_base_bg:       $enem_ahu_dark_blue;
+$enem_ahu_search_bg:            $enem_ahu_light_blue;
+$enem_ahu_menu_hover_bg:        $enem_ahu_light_blue;
+$enem_ahu_container_box_bg:     $enem_ahu_light_blue;
+$enem_ahu_tab_bg:               $enem_ahu_light_blue;
+$enem_ahu_content_top_bg:       $enem_ahu_black;
+$enem_ahu_box_vote_bg:          $enem_ahu_dark_blue;
+$enem_ahu_box_place_slider:     $enem_ahu_red;
+$enem_ahu_box_date_slider:      $enem_ahu_dark_grey;
+
+$enem_ahu_border_tab:           $enem_ahu_light_blue;
+$enem_ahu_panel_header:         $enem_ahu_light_blue;
+$enem_ahu_link_hover:           $enem_ahu_light_blue;
+
+$enem_ahu_dropdown_hover: #D7E8F3;
+
+$enem_ahu_title_footer_color:   $enem_ahu_dark2_blue;
+
+/*********************************************/
+
+/******** Ahu Panel News Video Height ********/
+$enem_ahu_panel_content_news_first:     420 !default; //This use for .#{$enem_prefix_el}content-news { &.content-news-first { your height }}
+$enem_ahu_panel_content_news_more:      236 !default; //This use for .#{$enem_prefix_el}content-news { &.content-news-more { your height }}
+$enem_ahu_panel_content_video:          495 !default; //This use for .#{$enem_prefix_el}content-video { your height }
+$enem_ahu_panel_content_voting:         255 !default; //This use for .#{$enem_prefix_el}panel-voting { &.wrapper-chart { your height }}
+/*********************************************/
+
+/************** COLOR and FONT ************/
+$main_blue:                         #365D98;
+$white:                             white;
+$red:                               #EF5350;
+$green:                             #26A69A;
+$blue:                              #42A5F5;
+$green_icon_box:                    #1BBC9B;
+$red_icon_box:                      #F3565D;
+$blue_icon_box:                     #89C4F4;
+$grey_icon_box:                     #C6C6C6;
+$gold_icon_box:                     #DEB743;
+$green_soft_icon_box:               #47B6AE;
+$purple_icon_box:                   #BD0DBD;
+
+$panel_color:                       #F9F9F9;
+$panel_border_color:                #D9D9D9;
+$font_color_header:                 #9AAECC;
+$font_header:                       1.5em;
+$menu_active_or_hover_background:   rgba(66, 165, 245, 0.1);
+$menu_active_or_hover_font_color:   rgb(66, 165, 245);
+/*********************************/
+
+/************** Radius ***********/
+$radius_all:3px;
+$radius_top:3px 0px;
+$radius_bottom: 0px 3px;
+$radius_none:0px;
+/*********************************/
+
+/************** FLOAT ************/
+$float_left:left;
+$float_right:right;
+/*********************************/
+
+/************** MARGIN or PADDING ***********/
+$margin_or_padding_none: 0px;
+$padding_for_grid:0 20px;
+/*********************************/
+
+/************* BOX SHADOW ***************/
+$shadow_color:rgba(0,0,0,0.5);
+$shadow:2px 2px 5px;
+/*****************************************/
+
+/************* FOR ARROW *****************/
+$border_arrow: 15px;
+$color_arrow:$panel_color;
+/*****************************************/
+
+/********** FOR PREFIX BROWSER ***********/
+$webkit: -webkit-;
+$moz: -moz-;
+$ms: -ms-;
+/*****************************************/
+
+/******** This for Enem Burger ********/
+/** Enem Burger Component Default **/
+$enem_burger_add_vendor_prefixes: true !default;
+$enem_burger_width:         20px !default;
+//$enem_burger_height:        2px !default;
+$enem_burger_height:        3px !default;
+//$enem_burger_gap:           3px !default;
+$enem_burger_gap:           5px !default;
+//$enem_burger_color:         #000 !default;
+$enem_burger_color:         #fff !default;
+$enem_border_radius:        0 !default;
+$enem_transition_duration:  .3s !default;
+$enem_component_burger:     ($enem_burger_width, $enem_burger_height, $enem_burger_gap, $enem_burger_color, $enem_border_radius, $enem_transition_duration);
+/**************************************/
