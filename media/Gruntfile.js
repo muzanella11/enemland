@@ -217,6 +217,23 @@ module.exports = function(grunt) {
       }
     },
       
+    copy: {
+      fontawesome: {
+        expand: true,
+        cwd: 'bower_components/font-awesome/fonts/',
+        src: ['*'],
+        dest: 'fonts/fontawesome/fonts/',
+      },
+      bootstrap: {
+        expand: true,
+        cwd: 'bower_components/bootstrap-sass/assets/fonts/bootstrap/',
+        src: ['*'],
+        dest: 'fonts/bootstrap/',
+      },
+    },
+      
+    // Jangan lupa ubah path fontnya di css
+      
 //    modernizr: {
 //      dist: {
 //            // Avoid unnecessary builds (see Caching section below)
@@ -284,6 +301,8 @@ module.exports = function(grunt) {
   grunt.registerTask('development-task', ['sass:dev','concat:vendor']);
   grunt.registerTask('production-task', ['sass:dist','uglify']);
   grunt.registerTask('production-min-task',['sass:dist','uglify','cssmin:target','cssmin:min_again','cssmin:target','cssmin:target','cssmin:target','cssmin:target','cssmin:target','cssmin:target']);
+    
+  grunt.registerTask('copy-task',['copy:fontawesome','copy:bootstrap']);
 
   grunt.registerTask('build', ['production-task']);
   grunt.registerTask('build-min', ['production-min-task']);
@@ -291,4 +310,5 @@ module.exports = function(grunt) {
     
   grunt.registerTask('enem',['build','default']);
   grunt.registerTask('enem-extream',['build-min','default']);
+  grunt.registerTask('enem-copy',['copy-task']); //Task for copy file support
 }
