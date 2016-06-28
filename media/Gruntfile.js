@@ -66,7 +66,7 @@ module.exports = function(grunt) {
 
     concat: {
       options: {
-        separator: ';',
+        separator: '\n;',
         banner: '\n',
       },
       vendor: {
@@ -102,7 +102,7 @@ module.exports = function(grunt) {
             
           //Enem Required Plugin Chart
           'bower_components/raphael/raphael-min.js',
-          'bower_components/morris.js/morris.min.js',
+          'bower_components/morris.js/morris.js',
           'bower_components/fancybox/jquery.fancybox.js',
             
           //Enem Required Plugin Alert
@@ -157,7 +157,7 @@ module.exports = function(grunt) {
       },
       target: {
         files: {
-          'js/vendor.min.js':['js/vendor.js']
+          'js/vendor.min.js':['js/vendor.js'],
         }
       }
     },
@@ -222,7 +222,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'bower_components/font-awesome/fonts/',
         src: ['*'],
-        dest: 'fonts/fontawesome/fonts/',
+        dest: 'fonts/fontawesome/',
       },
       bootstrap: {
         expand: true,
