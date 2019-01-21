@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test-me": "echo test-me one",
+    "test-sq": "echo test-sq",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
